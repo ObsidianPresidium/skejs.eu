@@ -107,10 +107,10 @@
             <div class="generator-container">
               <div class="generator-settings">
                 <div class="generator-settings-input">
-                  <input type="text" id="generator-input-name" onchange="doGenerate()" placeholder="(*) Name">
-                  <input type="text" id="generator-input-desc" onchange="doGenerate()" placeholder="Description">
-                  <input type="text" id="generator-input-icon" onchange="doGenerate()" placeholder="(*) Icon Path">
-                  <input type="text" id="generator-input-exec" onchange="doGenerate()" placeholder="(*) Executable Path">
+                  <input type="text" id="generator-input-name" onchange="Generator.Desktop.doGenerate()" placeholder="(*) Name">
+                  <input type="text" id="generator-input-desc" onchange="Generator.Desktop.doGenerate()" placeholder="Description">
+                  <input type="text" id="generator-input-icon" onchange="Generator.Desktop.doGenerate()" placeholder="(*) Icon Path">
+                  <input type="text" id="generator-input-exec" onchange="Generator.Desktop.doGenerate()" placeholder="(*) Executable Path">
                 </div>
                 <div class="generator-categories-container">
                   <h2>Categories</h2>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="generator-terminal-slider-container">
                   <label class="switch">
-                    <input type="checkbox" id="generator-terminal-checkbox" onchange="doGenerate()">
+                    <input type="checkbox" id="generator-terminal-checkbox" onchange="Generator.Desktop.doGenerate()">
                     <span class="slider"></span>
                   </label>
                   <p>&nbsp;Open a terminal with this app</p>
@@ -135,8 +135,8 @@
                   <textarea id="generator-code" cols="30" rows="10" disabled></textarea>
                 </div>
                 <div class="generator-btns">
-                  <div class="btn" tabindex="0" onclick="generatorClear()">Clear</div>
-                  <div class="btn" tabindex="0" onclick="generatorDownload()">Download</div>
+                  <div class="btn" tabindex="0" onclick="Generator.clearFields(Generator.Desktop)">Clear</div>
+                  <div class="btn" tabindex="0" onclick="Generator.Desktop.download()">Download</div>
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@
     <script src="scripts/translate.js"></script>
     <script src="scripts/time.js"></script>
     <script src="scripts/fun.js"></script>
-    <script src="scripts/generator.js"></script>
+    <script src="scripts/generator_new.js"></script>
     <script src="scripts/panel.js"></script>
     <script><?php if (!empty($_POST)) { echo("panel('translate');"); } ?></script></div>
     <div class="bottom-bar">
