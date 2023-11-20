@@ -1,7 +1,7 @@
 :root {
   --accent-color: #444444;
   --activated-color: rgb(80, 156, 255);
-  --fade-time: 1s;
+  --fade-time: 1000ms;
   --outer-border-radius: 24px;
   --inner-border-radius: 20px;
   --box-width: 700px;
@@ -233,12 +233,12 @@ form {
   background: linear-gradient(180deg, rgba(188,216,255,1) 0%, rgba(185,243,255,1) 100%);
   border-radius: 9px;
   box-shadow: 0px 0px 4px 2px #111;
-  transition: padding 0.1s ease-out, background 0.1s ease-out;
+  transition: padding 100ms ease-out, background 100ms ease-out;
 }
 
 .btn:hover {
   opacity: 0.8;
-  transition: padding 0.1s ease-out;
+  transition: padding 100ms ease-out;
   padding: 4px 12px;
   cursor: pointer;
 }
@@ -247,19 +247,19 @@ form {
   opacity: 0.8;
   padding: 4px 12px;
   background: linear-gradient(180deg, rgb(80, 156, 255) 0%, rgb(108, 171, 254) 100%);
-  transition: background 0.1s ease-out;
+  transition: background 100ms ease-out;
 }
 
 .hidden {
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  transition: opacity 250ms ease-out, transform 250ms ease-out;
 }
 
 .shown-panel {
   opacity: 1;
   transform: translateY(0px);
-  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  transition: opacity 250ms ease-out, transform 250ms ease-out;
 }
 
 .generator-container {
@@ -286,12 +286,12 @@ form {
   margin-right: .3rem;
   width: 50%;
   font-size: small;
-  transition: width .25s;
+  transition: width 250ms;
 }
 
 .generator-settings-input > input:focus {
   width: 100%;
-  transition: width .25s;
+  transition: width 250ms;
 }
 
 .generator-categories {
@@ -304,12 +304,12 @@ form {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
-  transition: .4s;
+  transition: 400ms;
 }
 
 .generator-categories select {
   margin: .5rem .5rem 0 0;
-  transition: .4s;
+  transition: 400ms;
 }
 
 .generator-categories-container h2, .generator-code-btns-container h2 {
@@ -355,7 +355,7 @@ form {
   bottom: 0;
   background-color: white;
   border-radius: 3rem;
-  transition: background-color .4s;
+  transition: background-color 400ms;
 }
 
 .slider:before {
@@ -366,13 +366,13 @@ form {
   left: .25rem;
   bottom: .25rem;
   background: var(--accent-color);
-  transition: .4s;
+  transition: 400ms;
   border-radius: 50%;
 }
 
 input:checked + .slider {
   background-color: var(--activated-color);
-  transition: .4s
+  transition: 400ms;
 }
 
 input:checked + .slider:before {
