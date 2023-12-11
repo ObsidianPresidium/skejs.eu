@@ -45,6 +45,8 @@ magicbar.addEventListener("keyup", function(event) {
     let val = magicbar.value;
     if (val === "") {
       changeWallpaperNow();
+    } else if (val.indexOf("!mcw") == 0) {
+      lnk("https://minecraft.wiki/w/" + encodeURIComponent(val.substring(5)))
     } else if (val.indexOf("!") == 0) {
       window.location.assign("https://duckduckgo.com/?q=" + encodeURIComponent(val));
     } else if (val.indexOf("//") == 0) {
