@@ -33,6 +33,7 @@
                   <p>Skejs.eu Links</p>
                   <div class="btn-container">
                     <div class="btn" onclick="lnk('https://skejs.eu/files')">Browse files</div>
+                    <div class="btn" onclick="lnk('https://skejs.eu/pacstall')">Pacstall Repo</div>
                   </div>
                 </div>
                 <div class="name-and-links-container">
