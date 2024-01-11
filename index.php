@@ -54,6 +54,12 @@
                     <div class="btn btn-toggle" onclick="panel('generator', this)"> .desktop file generator </div>
                   </div>
                 </div>
+                <div class="name-and-links-container">
+                  <p>Friends of skejs.eu</p>
+                  <div class="btn-container">
+                    <div class="btn" onclick="lnk('https://bambah.dk')"> Powered by Bambah </div>
+                  </div>
+                </div>
               </div>
             </div>
             <select onchange="if (this.selectedIndex) twitch(this.selectedIndex)">
