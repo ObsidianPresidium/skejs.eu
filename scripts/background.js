@@ -1,5 +1,5 @@
 const wallpaperSourceFolder = "assets/images/backgrounds";
-const numWallpapers = 10;
+const numWallpapers = 11;
 const switchInterval = 60;
 const fadeTime = Number(getComputedStyle(document.body).getPropertyValue("--fade-time").replace("s", ""));
 
